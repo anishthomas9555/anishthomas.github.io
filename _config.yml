@@ -1,0 +1,8 @@
+title: My Personal Portfolio
+description: My artwork, projects and interests
+author: Your Name
+
+theme: minima
+
+plugins:
+  - jekyll-feed
