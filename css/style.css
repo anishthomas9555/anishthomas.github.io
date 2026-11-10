@@ -1,0 +1,161 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f2ed;
+    color: #252525;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 8%;
+    border-bottom: 1px solid #dedbd4;
+}
+
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+    color: #252525;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #b46a43;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 8%;
+}
+
+.hero {
+    padding: 140px 0 160px;
+    max-width: 850px;
+}
+
+.eyebrow {
+    color: #a66b49;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: clamp(42px, 7vw, 82px);
+    line-height: 1.08;
+    letter-spacing: -3px;
+}
+
+h1 span {
+    color: #a66b49;
+}
+
+.intro {
+    max-width: 530px;
+    color: #666;
+    line-height: 1.8;
+    margin: 30px 0;
+}
+
+.link {
+    display: inline-block;
+    color: #252525;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #a66b49;
+    padding-bottom: 8px;
+}
+
+section:not(.hero) {
+    padding: 80px 0;
+    border-top: 1px solid #dedbd4;
+}
+
+h2 {
+    font-size: 38px;
+    margin-bottom: 35px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.placeholder {
+    height: 260px;
+    background: #dedbd4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a66b49;
+    font-size: 40px;
+}
+
+.project h3 {
+    margin-top: 18px;
+    font-size: 17px;
+}
+
+.project p, .body-text {
+    color: #777;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+.body-text {
+    max-width: 650px;
+}
+
+footer {
+    padding: 30px 8%;
+    border-top: 1px solid #dedbd4;
+    color: #888;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 22px 6%;
+    }
+
+    nav {
+        gap: 14px;
+    }
+
+    main {
+        padding: 0 6%;
+    }
+
+    .hero {
+        padding: 100px 0;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
